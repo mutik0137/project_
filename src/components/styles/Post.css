@@ -1,0 +1,100 @@
+.post {
+  margin: 0px 5%;
+  width: 90%;
+}
+.post-title{
+  margin: 44px 0px 15px 0.31%;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 42px;
+  
+  color: #333333;
+}
+.post-nav{
+  display: flex;
+}
+.post-nav__date{
+  margin: 0px 10px 0px 0.31%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  
+  color: #969696;
+}
+.post-nav__pipe{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #969696;
+}
+.post-nav__travel{
+  margin-left: 10px; 
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  
+  color: #969696;
+}
+.post-text{
+  margin: 15px 0px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  
+  color: #000000;
+}
+.post-btn{
+  display: inline-block;
+  height: 35px;
+  width: 25%;
+  border: 1px solid #D3D3D3;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  text-decoration: none;
+}
+.post-btn:hover{
+  cursor: pointer;
+}
+.post-btn__text{
+  position: relative;
+  left: 23%;
+  right: 23%;
+  top: 26%;
+  bottom: 26%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  
+  color: #000000;
+}
+.post-delimetr{
+  margin-top: 45px;
+
+  border: 1px solid #D3D3D3;
+}

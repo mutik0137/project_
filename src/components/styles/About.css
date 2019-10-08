@@ -1,0 +1,43 @@
+.about {
+  width: 72%;
+}
+.about > img{
+  width: 100%;
+  height: 200px;
+}
+.about-content{
+  margin-left: 5%;
+  margin-left: 5%;
+  width: 90%;
+}
+.about-content__title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  
+  color: #333333;
+}
+
+.about-content__subTitle{
+  margin: 30px 0px 10px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  
+  color: #333333;
+}
+
+.about-content > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #000000;
+}

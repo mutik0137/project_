@@ -1,0 +1,79 @@
+.post-page{
+  width: 62%;
+  margin: 50px 5% 0px 5%;
+}
+.post-page__title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  
+  color: #333333;
+}
+.post-page-info{
+  margin: 20px 0px;
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #969696;
+}
+.post-page__delimetr{
+  margin-bottom: 25px; 
+  
+  border: 1px solid #969696;
+}
+.post-page_subtitle{
+  margin-top: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  
+  color: #333333;
+}
+.post-page_subtitle2{
+  margin-top: 30px;
+}
+#post-page > p{
+  margin: 0px;
+  margin-top: 15px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #000000;
+}
+.post-page__vievPosts{
+  display: flex;
+  height: 50px;
+  width: 21%;
+  margin: 40px auto;
+  justify-content: center;
+  align-items: center;
+  
+  text-decoration: none;
+  color: #000000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  
+  border: 1px solid #D3D3D3;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.post-page__vievPosts:hover{
+  cursor: pointer;
+}
