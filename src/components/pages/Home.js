@@ -55,7 +55,7 @@ function Home() {
    {loading, error, posts} = useGetDataFrom('https://jsonplaceholder.typicode.com/posts');
 
   const handleMorePostsButtonClick = useCallback( () => {
-    const step = 10;
+    const step = 40;
     if (counter + step > posts.length) { /* Если текущее кол-во отображаемых
                      постов + шаг > числа всех постов отобразить все посты */
       setCounter(posts.length);
@@ -65,39 +65,23 @@ function Home() {
     setCounter(counter + step);
     }
   }, [counter, posts.length])
-     
-  function morePostsClassName() {
-    if (visibleMorePosts) {
-      return "home-more-posts";
-    }
-    else {
-      return "disable";
-    }
-  }
-
-  function errorMessageClassName() {
-    if (!error) {
-      return "disable";
-    }
-    else {
-      return "home-error-massage";
-    }
-  }
 
   return (      
     <div className="home">
-      <div className={errorMessageClassName()}><h1>{error}</h1></div> 
+      { error != null && <div className="home-error-massage">
+        <h1>{error}</h1>
+      </div>}
       { 
         posts.slice(0, counter).map( (post) => 
           <Post  key = {post.id} title = {post.title}  text = {post.body}></Post>
         )
       }
       <div>
-        <button className={morePostsClassName()}  onClick={handleMorePostsButtonClick}>
+        {visibleMorePosts && <button className="home-more-posts"  onClick={handleMorePostsButtonClick}>
           <div className="home-more-posts__text">
             More posts
           </div>
-        </button>
+        </button>}
       </div>
     </div>
   );
