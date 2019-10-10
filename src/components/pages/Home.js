@@ -59,9 +59,9 @@ function Home() {
   const [visiblePosts, setVisiblePosts] = useState(new Array(7));
 /* Не получается задать начальное состояние для visiblePosts
   const [visiblePosts, setVisiblePosts] = useState(allPosts.slice(0, 7)); - не сработает, т к
-  до первого рендера allPosts = [], следует завести глобальную для этого файла переменную? */
+  до первого рендера - allPosts = [], следует завести глобальную для этого файла переменную ? 
+  После нажатия btn все работает */
   
-
   const handleMorePostsButtonClick = useCallback( () => {
     const step = 10;
 
