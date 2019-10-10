@@ -63,7 +63,7 @@ function Home() {
   
 
   const handleMorePostsButtonClick = useCallback( () => {
-    const step = 40;
+    const step = 10;
 
     if (visiblePosts.length + step > allPosts.length) { /* Если текущее кол-во отображаемых
                      постов + шаг > числа всех постов отобразить все посты */
