@@ -56,16 +56,19 @@ function Home() {
 //  const [counter, setCounter] = useState(7); // Текущее количество отображаемых постов на странице
   const {loading, error, allPosts} = useGetDataFrom('https://jsonplaceholder.typicode.com/posts');
   const [visibleMorePosts, setVisibleMorePosts] = useState(true); // После того, как все посты отображены - false (скрыть btn) 
-  const [visiblePosts, setVisiblePosts] = useState(new Array(7));
+  const [visiblePosts, setVisiblePosts] = useState([]);
 /* Не получается задать начальное состояние для visiblePosts
   const [visiblePosts, setVisiblePosts] = useState(allPosts.slice(0, 7)); - не сработает, т к
-  до первого рендера - allPosts = [], следует завести глобальную для этого файла переменную ? 
-  После нажатия btn more-posts все работает */
+  до первого рендера - allPosts = [], поэтому сразу вызываю обработчик нажатия на btn*/
   
+  useEffect( () => {
+    handleMorePostsButtonClick();
+  }, [allPosts.length])
+
   const handleMorePostsButtonClick = useCallback( () => {
     const step = 10;
-
-    if (visiblePosts.length + step > allPosts.length) { /* Если текущее кол-во отображаемых
+ 
+    if (visiblePosts.length + step >= allPosts.length && allPosts.length !== 0) { /* Если текущее кол-во отображаемых
                      постов + шаг > числа всех постов отобразить все посты */
       setVisiblePosts(allPosts.slice());
       setVisibleMorePosts(false); // Т к все посты отображены - убрать кнопку
